@@ -1,0 +1,59 @@
+CACHE MANIFEST
+# v1 6/2/20
+# Manifest file created for CS317 Assignment 1
+# Currency Calculator
+# James O'Donnell 2020 @ University of Strathclyde, Glasgow
+# Note: Warning thrown - [Deprecation] Application Cache API manifest selection is deprecated and will be removed in M82, around April 2020.
+
+
+# Files to be cached
+index.html
+normalize.css
+main.css
+currView.js
+currController.js
+
+images/icon.png
+images/menu.png
+images/small-icon.png
+images/aud.png
+images/brl.png
+images/cad.png
+images/chf.png
+images/cny.png
+images/czk.png
+images/dkk.png
+images/eur.png
+images/hrk.png
+images/gbp.png
+images/hkd.png
+images/huf.png
+images/idr.png
+images/ils.png
+images/inr.png
+images/isk.png
+images/krw.png
+images/mxn.png
+images/myr.png
+images/mzd.png
+images/nok.png
+images/php.png
+images/pln.png
+images/ron.png
+images/rub.png
+images/sek.png
+images/sgd.png
+images/thb.png
+images/try.png
+images/usd.png
+images/zar.png
+
+# If network available, take currModel for new rates
+NETWORK:
+currModel.js
+
+# Fallback content: no network, use local
+FALLBACK:
+. currModel.js
+
+

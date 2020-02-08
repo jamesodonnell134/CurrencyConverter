@@ -1,0 +1,222 @@
+/*
+As specified in the assignment brief, we may only use code which
+appears in the course content.
+
+I have used some of the HTML, CSS and JS created by Mark Dunlop at the
+University of Strathclyde, Glasgow to aid in the design of my application.
+
+These were included in the YouTube videos and MAD code menu. As stated on
+the source code at:
+
+https://devweb3000.cis.strath.ac.uk/~aes02112/317/
+
+"This code can also be included in submissions of coursework for CS317 without declaration."
+
+Author: James O'Donnell 2020 @ University of Strathclyde, Glasgow.
+ */
+
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans);*/
+
+* {
+    margin: 0;
+
+}
+html, body {
+    height: 100%;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 3vh;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Tahoma, Geneva, sans-serif;
+
+}
+z
+#mainsection h1{
+    margin-bottom: 0.6rem;
+}
+#mainsection p{
+    margin-bottom: 0.5rem;
+}
+
+
+.visit select{
+    background-color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    padding: 0.1rem;
+    font-size: 1rem;
+    width: 4rem;
+    height: 2rem;
+    border: 0.05rem solid black;
+}
+
+.currencies {
+    height: 12rem;
+    width: 10rem;
+}
+
+.fee select{
+    background-color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    padding: 0.1rem;
+    font-size: 1rem;
+    width: 3rem;
+    height: 2rem;
+    border: 0.05rem solid #bfbfbf;
+}
+
+input[type="button"]
+{
+    background-color: #008000;
+    color: white;
+    border: solid #bfbfbf 0.1rem;
+    width:3.5rem;
+    height: 5rem;
+    font-family: Tahoma, Geneva, sans-serif;
+    border-radius: 0.75rem;
+    font-size: 2.75rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+#refreshrates
+{
+    width: 2rem;
+    height: 2rem;
+    float: right;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: solid black 0.1rem;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+
+input[type="text"]{
+    background-color: white;
+    width: calc(90% - 0.75rem);
+    height: 2rem;
+    color: black;
+    border-radius: 0.5rem;
+    border: solid #bfbfbf 0.1rem;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    padding-right: 0.5rem;
+
+}
+
+p.curr{
+    font-size: 1rem;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: left;
+
+}
+
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:0.2em;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 1.4rem;
+    white-space: normal;
+}
+nav {
+    background-color:#eeeeee;
+    border-right: .1rem inset #bfbfbf;
+    padding: 0.6rem;
+    padding-right: 1rem;
+    width: 80%;
+    float:left;
+    font-size: 0.8rem;
+    height: calc(100% - 4.5rem);
+}
+nav.closedmenu{
+    width:25px
+}
+section.closedmenu{
+    margin-left: calc(20px + 10px);
+}
+p.navMenuItem{
+    margin-top: 2rem;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    background: #99ff99;
+    width: 4rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+section{
+    margin-left: calc(20% + 10px);
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    min-height: calc(100% - 10rem);
+    height: calc(100% - 4rem);
+    background: #c1f0c1;
+    overflow:auto;
+}
+
+
+#calc{
+    float: right;
+    margin-left: 2px;
+}
+
+section.popup {
+    display: none;
+    width:150vw;
+    height:100vh;
+    background:rgba(105,100,100,0.8);
+    position: absolute;
+    top:0px;
+    left:0px;
+    margin-left:0px;
+}
+.popupcontent{
+    padding: 5vmin;
+    position: absolute;
+    top: 10vmin;
+    left: 50vw;
+    text-align: center;
+    margin-left: -35vmin; /*half-width + padding*/
+    background: lightgray;
+    width: 60vmin;
+    font-size: 0.6rem;
+}
+
+.main{
+    padding: 1vmin;
+    overflow: hidden;
+}
+
+footer {
+    background-color:black;
+    color: white;
+    clear:both;
+    text-align:center;
+    padding:0.1em;
+    font-size: 0.7rem;
+    height: 0.9rem;
+}
+
+
+
+footer a {
+    text-decoration: none;
+    color: #ddf;
+}
+footer a:hover{
+    color: cyan;
+}
+#popupAbout P{
+    padding: 0.5rem;
+}
