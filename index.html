@@ -18,7 +18,7 @@ Author: James O'Donnell 2020 @ University of Strathclyde, Glasgow.
 -->
 
 <html manifest="curr_manifest.appcache">
-<title>Handy Currency Calculator</title>
+<title>Currency Calculator</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -34,228 +34,228 @@ Author: James O'Donnell 2020 @ University of Strathclyde, Glasgow.
 
 </head>
 <body>
-<header>Handy Currency Calculator</header>
+<header>Currency Calculator</header>
 
 <nav id="nav">
-    <p id="navmenu"><img src="images/menu.png" alt="Menu" width="40rem" height="40rem"/></p>
+    <p id="navmenu"><img src="images/menu.png" alt="Menu" width="30px" height="30px"/></p>
     <div id="navelem">
 
-                <br><label id = "for-label"></label><label><strong>Foreign:</strong></label><br><br>
-                <div class="visitScroll" style = "margin-left: 0.5rem; background-color: white;width:6rem;height: 5rem;overflow: scroll;">
+        <br><label id = "for-label"></label><label><strong>Foreign:</strong></label><br><br>
+        <div class="visitScroll" style = "margin-left: 0.5rem; background-color: white;width:6rem;height: 5rem;overflow: scroll;">
 
-                    <form id="visit">
+            <form id="visit">
 
-                        <label class = "curr"> <img width="40em" height="40em" src="images/eur.png"> EUR
-                            <input type="radio" name="visitingCurrency" value = "EUR" checked = checked >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/gbp.png"> GBP
-                            <input type="radio" name="visitingCurrency" value = "GBP" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/usd.png"> USD
-                            <input type="radio" name="visitingCurrency" value = "USD" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/nok.png"> NOK
-                            <input type="radio" name="visitingCurrency" value = "NOK" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/aud.png"> AUD
-                            <input type="radio" name="visitingCurrency" value = "AUD" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/brl.png"> BRL
-                            <input type="radio" name="visitingCurrency" value = "BRL" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/cad.png"> CAD
-                            <input type="radio" name="visitingCurrency" value = "CAD" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/chf.png"> CHF
-                            <input type="radio" name="visitingCurrency" value = "CHF" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/cny.png"> CNY
-                            <input type="radio" name="visitingCurrency" value = "CNY" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/czk.png"> CZK
-                            <input type="radio" name="visitingCurrency" value = "CZK" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/dkk.png"> DKK
-                            <input type="radio" name="visitingCurrency" value = "DKK" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/hkd.png"> HKD
-                            <input type="radio" name="visitingCurrency" value = "HKD" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/hrk.png"> HRK
-                            <input type="radio" name="visitingCurrency" value = "HRK" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/huf.png"> HUF
-                            <input type="radio" name="visitingCurrency" value = "HUF" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/idr.png"> IDR
-                            <input type="radio" name="visitingCurrency" value = "IDR" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/ils.png"> ILS
-                            <input type="radio" name="visitingCurrency" value = "ILS" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/inr.png"> INR
-                            <input type="radio" name="visitingCurrency" value = "INR" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/isk.png"> ISK
-                            <input type="radio" name="visitingCurrency" value = "ISK" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/krw.png"> KRW
-                            <input type="radio" name="visitingCurrency" value = "KRW" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/mxn.png"> MXN
-                            <input type="radio" name="visitingCurrency" value = "MXN" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/myr.png"> MYR
-                            <input type="radio" name="visitingCurrency" value = "MYR" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/mzd.png"> MZD
-                            <input type="radio" name="visitingCurrency" value = "MZD" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/php.png"> PHP
-                            <input type="radio" name="visitingCurrency" value = "PHP" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/pln.png"> PLN
-                            <input type="radio" name="visitingCurrency" value = "PLN" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/ron.png"> RON
-                            <input type="radio" name="visitingCurrency" value = "RON" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/rub.png"> RUB
-                            <input type="radio" name="visitingCurrency" value = "RUB" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/sek.png"> SEK
-                            <input type="radio" name="visitingCurrency" value = "SEK" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/sgd.png"> SGD
-                            <input type="radio" name="visitingCurrency" value = "SGD" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/thb.png"> THB
-                            <input type="radio" name="visitingCurrency" value = "THB" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/try.png"> TRY
-                            <input type="radio" name="visitingCurrency" value = "TRY" >
-                        </label><br>
-                        <label class = "curr"> <img width="40em" height="40em" src="images/zar.png"> ZAR
-                            <input type="radio" name="visitingCurrency" value = "ZAR" >
-                        </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/eur.png"> EUR
+                    <input type="radio" name="visitingCurrency" value = "EUR" checked = checked >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/gbp.png"> GBP
+                    <input type="radio" name="visitingCurrency" value = "GBP" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/usd.png"> USD
+                    <input type="radio" name="visitingCurrency" value = "USD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/nok.png"> NOK
+                    <input type="radio" name="visitingCurrency" value = "NOK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/aud.png"> AUD
+                    <input type="radio" name="visitingCurrency" value = "AUD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/brl.png"> BRL
+                    <input type="radio" name="visitingCurrency" value = "BRL" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/cad.png"> CAD
+                    <input type="radio" name="visitingCurrency" value = "CAD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/chf.png"> CHF
+                    <input type="radio" name="visitingCurrency" value = "CHF" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/cny.png"> CNY
+                    <input type="radio" name="visitingCurrency" value = "CNY" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/czk.png"> CZK
+                    <input type="radio" name="visitingCurrency" value = "CZK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/dkk.png"> DKK
+                    <input type="radio" name="visitingCurrency" value = "DKK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/hkd.png"> HKD
+                    <input type="radio" name="visitingCurrency" value = "HKD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/hrk.png"> HRK
+                    <input type="radio" name="visitingCurrency" value = "HRK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/huf.png"> HUF
+                    <input type="radio" name="visitingCurrency" value = "HUF" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/idr.png"> IDR
+                    <input type="radio" name="visitingCurrency" value = "IDR" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/ils.png"> ILS
+                    <input type="radio" name="visitingCurrency" value = "ILS" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/inr.png"> INR
+                    <input type="radio" name="visitingCurrency" value = "INR" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/isk.png"> ISK
+                    <input type="radio" name="visitingCurrency" value = "ISK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/krw.png"> KRW
+                    <input type="radio" name="visitingCurrency" value = "KRW" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/mxn.png"> MXN
+                    <input type="radio" name="visitingCurrency" value = "MXN" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/myr.png"> MYR
+                    <input type="radio" name="visitingCurrency" value = "MYR" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/mzd.png"> MZD
+                    <input type="radio" name="visitingCurrency" value = "MZD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/php.png"> PHP
+                    <input type="radio" name="visitingCurrency" value = "PHP" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/pln.png"> PLN
+                    <input type="radio" name="visitingCurrency" value = "PLN" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/ron.png"> RON
+                    <input type="radio" name="visitingCurrency" value = "RON" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/rub.png"> RUB
+                    <input type="radio" name="visitingCurrency" value = "RUB" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/sek.png"> SEK
+                    <input type="radio" name="visitingCurrency" value = "SEK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/sgd.png"> SGD
+                    <input type="radio" name="visitingCurrency" value = "SGD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/thb.png"> THB
+                    <input type="radio" name="visitingCurrency" value = "THB" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/try.png"> TRY
+                    <input type="radio" name="visitingCurrency" value = "TRY" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/zar.png"> ZAR
+                    <input type="radio" name="visitingCurrency" value = "ZAR" >
+                </label><br>
 
-                    </form>
+            </form>
 
-                </div>
+        </div>
 
-                <br>
-                    <label id = "to-label"></label><label><strong>Home:</strong></label><br><br>
-                    <div class="homeScroll" style = "margin-left: 0.5rem; background-color: white;width:6rem;height: 5rem;overflow: scroll;">
-                        <form id="home">
+        <br>
+        <label id = "to-label"></label><label><strong>Home:</strong></label><br><br>
+        <div class="homeScroll" style = "margin-left: 0.5rem; background-color: white;width:6rem;height: 5rem;overflow: scroll;">
+            <form id="home">
 
-                            <label class = "curr"> <img width="40em" height="40em" src="images/eur.png"> EUR
-                                <input type="radio" name="homeCurrency" value = "EUR" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/gbp.png"> GBP
-                                <input type="radio" name="homeCurrency" value = "GBP" checked = checked>
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/usd.png"> USD
-                                <input type="radio" name="homeCurrency" value = "USD" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/nok.png"> NOK
-                                <input type="radio" name="homeCurrency" value = "NOK" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/aud.png"> AUD
-                                <input type="radio" name="homeCurrency" value = "AUD" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/brl.png"> BRL
-                                <input type="radio" name="homeCurrency" value = "BRL" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/cad.png"> CAD
-                                <input type="radio" name="homeCurrency" value = "CAD" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/chf.png"> CHF
-                                <input type="radio" name="homeCurrency" value = "CHF" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/cny.png"> CNY
-                                <input type="radio" name="homeCurrency" value = "CNY" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/czk.png"> CZK
-                                <input type="radio" name="homeCurrency" value = "CZK" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/dkk.png"> DKK
-                                <input type="radio" name="homeCurrency" value = "DKK" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/hkd.png"> HKD
-                                <input type="radio" name="homeCurrency" value = "HKD" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/hrk.png"> HRK
-                                <input type="radio" name="homeCurrency" value = "HRK" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/huf.png"> HUF
-                                <input type="radio" name="homeCurrency" value = "HUF" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/idr.png"> IDR
-                                <input type="radio" name="homeCurrency" value = "IDR" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/ils.png"> ILS
-                                <input type="radio" name="homeCurrency" value = "ILS" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/inr.png"> INR
-                                <input type="radio" name="homeCurrency" value = "INR" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/isk.png"> ISK
-                                <input type="radio" name="homeCurrency" value = "ISK" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/krw.png"> KRW
-                                <input type="radio" name="homeCurrency" value = "KRW" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/mxn.png"> MXN
-                                <input type="radio" name="homeCurrency" value = "MXN" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/myr.png"> MYR
-                                <input type="radio" name="homeCurrency" value = "MYR" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/mzd.png"> MZD
-                                <input type="radio" name="homeCurrency" value = "MZD" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/php.png"> PHP
-                                <input type="radio" name="homeCurrency" value = "PHP" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/pln.png"> PLN
-                                <input type="radio" name="homeCurrency" value = "PLN" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/ron.png"> RON
-                                <input type="radio" name="homeCurrency" value = "RON" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/rub.png"> RUB
-                                <input type="radio" name="homeCurrency" value = "RUB" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/sek.png"> SEK
-                                <input type="radio" name="homeCurrency" value = "SEK" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/sgd.png"> SGD
-                                <input type="radio" name="homeCurrency" value = "SGD" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/thb.png"> THB
-                                <input type="radio" name="homeCurrency" value = "THB" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/try.png"> TRY
-                                <input type="radio" name="homeCurrency" value = "TRY" >
-                            </label><br>
-                            <label class = "curr"> <img width="40em" height="40em" src="images/zar.png"> ZAR
-                                <input type="radio" name="homeCurrency" value = "ZAR" >
-                            </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/eur.png"> EUR
+                    <input type="radio" name="homeCurrency" value = "EUR" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/gbp.png"> GBP
+                    <input type="radio" name="homeCurrency" value = "GBP" checked = checked>
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/usd.png"> USD
+                    <input type="radio" name="homeCurrency" value = "USD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/nok.png"> NOK
+                    <input type="radio" name="homeCurrency" value = "NOK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/aud.png"> AUD
+                    <input type="radio" name="homeCurrency" value = "AUD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/brl.png"> BRL
+                    <input type="radio" name="homeCurrency" value = "BRL" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/cad.png"> CAD
+                    <input type="radio" name="homeCurrency" value = "CAD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/chf.png"> CHF
+                    <input type="radio" name="homeCurrency" value = "CHF" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/cny.png"> CNY
+                    <input type="radio" name="homeCurrency" value = "CNY" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/czk.png"> CZK
+                    <input type="radio" name="homeCurrency" value = "CZK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/dkk.png"> DKK
+                    <input type="radio" name="homeCurrency" value = "DKK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/hkd.png"> HKD
+                    <input type="radio" name="homeCurrency" value = "HKD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/hrk.png"> HRK
+                    <input type="radio" name="homeCurrency" value = "HRK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/huf.png"> HUF
+                    <input type="radio" name="homeCurrency" value = "HUF" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/idr.png"> IDR
+                    <input type="radio" name="homeCurrency" value = "IDR" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/ils.png"> ILS
+                    <input type="radio" name="homeCurrency" value = "ILS" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/inr.png"> INR
+                    <input type="radio" name="homeCurrency" value = "INR" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/isk.png"> ISK
+                    <input type="radio" name="homeCurrency" value = "ISK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/krw.png"> KRW
+                    <input type="radio" name="homeCurrency" value = "KRW" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/mxn.png"> MXN
+                    <input type="radio" name="homeCurrency" value = "MXN" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/myr.png"> MYR
+                    <input type="radio" name="homeCurrency" value = "MYR" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/mzd.png"> MZD
+                    <input type="radio" name="homeCurrency" value = "MZD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/php.png"> PHP
+                    <input type="radio" name="homeCurrency" value = "PHP" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/pln.png"> PLN
+                    <input type="radio" name="homeCurrency" value = "PLN" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/ron.png"> RON
+                    <input type="radio" name="homeCurrency" value = "RON" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/rub.png"> RUB
+                    <input type="radio" name="homeCurrency" value = "RUB" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/sek.png"> SEK
+                    <input type="radio" name="homeCurrency" value = "SEK" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/sgd.png"> SGD
+                    <input type="radio" name="homeCurrency" value = "SGD" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/thb.png"> THB
+                    <input type="radio" name="homeCurrency" value = "THB" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/try.png"> TRY
+                    <input type="radio" name="homeCurrency" value = "TRY" >
+                </label><br>
+                <label class = "curr"> <img width="40em" height="40em" src="images/zar.png"> ZAR
+                    <input type="radio" name="homeCurrency" value = "ZAR" >
+                </label><br>
 
-                        </form>
-                    </div><br>
+            </form>
+        </div><br>
 
-                <div class="fee">
-                    <label><strong>Bank Fee:</strong></label><br>
-                    <select class="form-control" id="bankFee">
-                        <option>0%</option>
-                        <option>2%</option>
-                        <option>4%</option>
-                        <option>6%</option>
-                    </select>
-                </div>
+        <div class="fee">
+            <label><strong>Bank Fee:</strong></label><br>
+            <select class="form-control" id="bankFee">
+                <option>0%</option>
+                <option>2%</option>
+                <option>4%</option>
+                <option>6%</option>
+            </select>
+        </div>
 
-                <p class="navMenuItem" id="navMenuAbout">About</p>
+        <p class="navMenuItem" id="navMenuAbout">About</p>
 
     </div>
 
@@ -297,7 +297,9 @@ Author: James O'Donnell 2020 @ University of Strathclyde, Glasgow.
         </table><br>
 
 
-        <button type="button" id = "refreshrates" onclick = "location.reload()">&#x21bb;</button>
+        <button type="button" id = "refreshrates" onclick = "location.reload()">&#8635;
+        </button>
+
 
         <p style = "text-align: center; font-weight: bold;">Rates last updated:</p>
         <p id = "rate_update" style = "text-align: center;"></p>
