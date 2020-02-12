@@ -16,6 +16,11 @@ function currView() {
     let flabel = document.getElementById("for-label");
     let tlabel = document.getElementById("to-label");
 
+    let today = new Date();
+    let date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+    let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    let dateTime = date+' '+time;
+
     var openNav = true,
         addMouseAndTouchUp = function (elementID, handler) {
             //utility function to add both mouseup and touchend events and prevent double events
@@ -113,15 +118,27 @@ function currView() {
         if (localStorage['bankFee'])
             bFee.value = localStorage['bankFee'];
 
+        if(navigator.onLine) {
+            if(localStorage['rates_updated']){
+                document.getElementById('refreshrates').innerHTML = "Rates last updated: " + localStorage['rates_updated'];
+            }
 
-        // Checks if rates have actually been downloaded
-        if(localStorage['rates_updated']){
-            document.getElementById("rate_update").innerHTML = localStorage['rates_updated'];
+            else{
+                document.getElementById('refreshrates').innerHTML = "Rates last updated: " + dateTime;
+            }
+        }
+
+        if(!navigator.onLine) {
+            if(localStorage['rates_updated']){
+                document.getElementById('refreshrates').innerHTML = "Rates last updated: " + localStorage['rates_updated'];
+
+            }
+            else{
+                document.getElementById('refreshrates').innerHTML = "Using last saved rates!";
+            }
 
         }
-        else{
-            document.getElementById("rate_update").innerHTML = "Refresh required!";
-        }
+
     }
 
     if(localStorage['visitingCurrency']){
@@ -133,9 +150,9 @@ function currView() {
         calculator.display.value = "0 " + f.value;
     }
 
-
-
     this.init = function () {
+
+
         openCloseNav();
         addMouseAndTouchUp("navmenu", openCloseNav);
         addMouseAndTouchUp("navMenuAbout", showAbout);

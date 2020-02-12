@@ -21,7 +21,8 @@ Author: James O'Donnell 2020 @ University of Strathclyde, Glasgow.
 <title>Currency Calculator</title>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
@@ -253,9 +254,10 @@ Author: James O'Donnell 2020 @ University of Strathclyde, Glasgow.
                 <option>4%</option>
                 <option>6%</option>
             </select>
+            <p class="navMenuItem" id="navMenuAbout">About</p>
+
         </div>
 
-        <p class="navMenuItem" id="navMenuAbout">About</p>
 
     </div>
 
@@ -270,7 +272,7 @@ Author: James O'Donnell 2020 @ University of Strathclyde, Glasgow.
         <table>
             <tr>
                 <td style="padding-bottom: 0.5rem" colspan="4">
-                    <input type="text" name="display" id="display" disabled readonly = readonly>
+                    <input type="text" name="display" id="display" disabled="disabled" readonly = readonly>
                 </td>
             </tr>
 
@@ -295,18 +297,8 @@ Author: James O'Donnell 2020 @ University of Strathclyde, Glasgow.
                 <td><input type="button" id = "eq" name="equals" value="="></td>
             </tr>
         </table><br>
-
-
-        <button type="button" id = "refreshrates" onclick = "location.reload()">&#8635;
-        </button>
-
-
-        <p style = "text-align: center; font-weight: bold;">Rates last updated:</p>
-        <p id = "rate_update" style = "text-align: center;"></p>
-
-
+        <p style = "text-align: center;">Rates will be updated whenever there is an internet connection!</p>
     </form>
-
 </section>
 
 <section class="popup" id="popupAbout">
@@ -317,7 +309,7 @@ Author: James O'Donnell 2020 @ University of Strathclyde, Glasgow.
     </div>
 </section>
 
-<footer></a>James O'Donnell 2020 @ StrathUni </a></footer>
+<footer><a id = "refreshrates"></a></footer>
 <script src="currModel.js"></script>
 <script src="currView.js"></script>
 <script src="currController.js"></script>
