@@ -15,6 +15,8 @@ function currView() {
     let bFee = document.getElementById("bankFee");
     let flabel = document.getElementById("for-label");
     let tlabel = document.getElementById("to-label");
+    let flabel2 = document.getElementById("f");
+    let tlabel2 = document.getElementById("h")
 
     let today = new Date();
     let date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
@@ -84,6 +86,7 @@ function currView() {
             localStorage['visitingCurrency'] = f.value;
             calculator.display.value = "0 " + f.value;
             flabel.innerHTML="<img style = \"margin-right: 0.2rem;\" src=\"images/"+f.value.toLowerCase()+".png\" width=\"40rem\" height=\"40rem\">";
+            flabel2.innerHTML="<strong>Foreign: </strong> "+localStorage['visitingCurrency'];
         };
     }
 
@@ -91,6 +94,8 @@ function currView() {
         t[i].onclick = function() {
             localStorage['homeCurrency'] = t.value;
             tlabel.innerHTML="<img style = \"margin-right: 0.2rem;\" src=\"images/"+t.value.toLowerCase()+".png\" width=\"40rem\" height=\"40rem\">";
+            tlabel2.innerHTML="<strong>Home: </strong> "+localStorage['homeCurrency'];
+
         };
     }
 
@@ -101,11 +106,15 @@ function currView() {
     if((localStorage['visitingCurrency']) && (localStorage['homeCurrency'])){
         flabel.innerHTML="<img style = \"margin-right: 0.2rem;\" src=\"images/"+localStorage['visitingCurrency'].toLowerCase()+".png\" width=\"40rem\" height=\"40rem\">";
         tlabel.innerHTML="<img style = \"margin-right: 0.2rem;\" src=\"images/"+localStorage['homeCurrency'].toLowerCase()+".png\" width=\"40rem\" height=\"40rem\">";
+        flabel2.innerHTML="<strong>Foreign: </strong> "+localStorage['visitingCurrency'];
+        tlabel2.innerHTML="<strong>Home: </strong> "+localStorage['homeCurrency'];
     }
 
     else{
         flabel.innerHTML="<img style = \"margin-right: 0.2rem;\" src=\"images/"+f.value.toLowerCase()+".png\" width=\"40rem\" height=\"40rem\">";
         tlabel.innerHTML="<img style = \"margin-right: 0.2rem;\" src=\"images/"+t.value.toLowerCase()+".png\" width=\"40rem\" height=\"40rem\">";
+        flabel2.innerHTML="<strong>Foreign: </strong> "+f.value;
+        tlabel2.innerHTML="<strong>Home: </strong> "+t.value;
     }
 
 
